@@ -9,13 +9,13 @@ import MusicApp from "../../img/musicapp.png";
 import "swiper/css";
 
 const Portfolio = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  // const theme = useContext(themeContext);
+  // const darkMode = theme.state.darkMode;
 
   return (
     <div className="portfolio">
       {/* Heading */}
-      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
+      {/* <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span> */}
       <span>Portfolio</span>
 
       {/* Swiper */}
