@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { themeContext } from "../../Context";
 import "./Services.css";
 import Web from "../../img/Web.png";
 import Mob from "../../img/Mob.png";
@@ -7,11 +8,14 @@ import Card from "../Card/Card";
 import CV from "./CV.pdf";
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="services">
       {/* leftSide */}
       <div className="awesome">
-        <span>Interested</span>
+        <span style={{ color: darkMode ? "white" : "" }}>Interested</span>
         <span>Working Areas</span>
         <span>
           Lorem Ipsum is simply dummy text of the printing and typesetting

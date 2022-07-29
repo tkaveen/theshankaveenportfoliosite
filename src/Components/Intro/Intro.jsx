@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { themeContext } from "../../Context";
 import "./Intro.css";
 // import Github from "../../img/github.png";
 // import LinkedIn from "../../img/linkedin.png";
@@ -15,11 +16,14 @@ import Github from "@iconscout/react-unicons/icons/uil-github";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hi! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
           <span>Theshan Kaveen</span>
           <span>
             A hardworking and an ambitious undergraduate in Management and
