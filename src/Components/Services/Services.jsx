@@ -15,7 +15,7 @@ const Services = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="services">
+    <div className="services" id="Services">
       {/* leftSide */}
       <div className="awesome">
         <span style={{ color: darkMode ? "white" : "" }}>Interested</span>

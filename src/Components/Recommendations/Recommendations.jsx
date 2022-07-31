@@ -26,7 +26,7 @@ const Recommendations = () => {
   ];
 
   return (
-    <div className="r-wrapper">
+    <div className="r-wrapper" id="Recommendations">
       <div className="r-heading">
         <span>Recommendations</span>
         <span> About me..</span>
