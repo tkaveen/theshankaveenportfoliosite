@@ -14,8 +14,11 @@ import earth from "../../img/earth.png";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
+import { motion } from "framer-motion";
 
 const Intro = () => {
+  const transition = { duration: 2, type: "spring" };
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -56,15 +59,30 @@ const Intro = () => {
         <img src={Vector2} alt="" />
         <img src={KaveenPic} alt="" />
         <img src={Vector3} alt="" />
-        <div style={{ top: "-4%", left: "68%" }}>
+        <motion.div
+          initial={{ top: "-4%", left: "74%" }}
+          whileInView={{ left: "68%" }}
+          transition={transition}
+          style={{ top: "-4%", left: "68%" }}
+        >
           <FloatingDiv image={Web} txt1="Web" txt2="Developer" />
-        </div>
-        <div style={{ top: "18rem", left: "9.9rem" }}>
+        </motion.div>
+        <motion.div
+          initial={{ top: "18rem", left: "5rem" }}
+          whileInView={{ left: "9rem" }}
+          transition={transition}
+          style={{ top: "18rem", left: "9.9rem" }}
+        >
           <FloatingDiv image={Mob} txt1="Mobile" txt2="Developer" />
-        </div>
-        <div style={{ left: "-4rem" }}>
+        </motion.div>
+        <motion.div
+          initial={{ left: "-20%" }}
+          whileInView={{ left: "-10%" }}
+          transition={transition}
+          style={{ left: "-4rem" }}
+        >
           <FloatingDiv image={uiux} txt1="UI/UX" txt2="Developer" />
-        </div>
+        </motion.div>
         {/* blurDivs */}
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div

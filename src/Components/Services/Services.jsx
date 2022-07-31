@@ -6,8 +6,11 @@ import Mob from "../../img/Mob.png";
 import uiux from "../../img/uiux.png";
 import Card from "../Card/Card";
 import CV from "./CV.pdf";
+import { motion } from "framer-motion";
 
 const Services = () => {
+  const transition = { duration: 2, type: "spring" };
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -35,23 +38,38 @@ const Services = () => {
 
       {/* rightSide */}
       <div className="cards">
-        <div style={{ top: "2rem", left: "19rem" }}>
+        <motion.div
+          initial={{ left: "15rem" }}
+          whileInView={{ left: "19rem" }}
+          transition={transition}
+          style={{ top: "2rem", left: "19rem" }}
+        >
           <Card
             img={Web}
             heading={"Web Design"}
             detail={"React,HTML,CSS,Spring Boot,Angular"}
           />
-        </div>
-        <div style={{ top: "15rem", left: "-2rem" }}>
+        </motion.div>
+        <motion.div
+          initial={{ left: "0" }}
+          whileInView={{ left: "-2rem" }}
+          transition={transition}
+          style={{ top: "15rem", left: "-2rem" }}
+        >
           <Card img={Mob} heading={"Mobile Develpoment"} detail={"Flutter"} />
-        </div>
-        <div style={{ top: "23rem", left: "17.5rem" }}>
+        </motion.div>
+        <motion.div
+          initial={{ left: "15rem" }}
+          whileInView={{ left: "17.5rem" }}
+          transition={transition}
+          style={{ top: "23rem", left: "17.5rem" }}
+        >
           <Card
             img={uiux}
             heading={"UI/UX Design"}
             detail={"Figma,inVision Studio,Adobe xd"}
           />
-        </div>
+        </motion.div>
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}
