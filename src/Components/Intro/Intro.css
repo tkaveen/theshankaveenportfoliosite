@@ -17,10 +17,22 @@
   flex-direction: column;
 }
 
-.i-name > :nth-child(1) {
+.i-name > div > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.i-name > div > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
   font-size: 3rem;
+}
+
+.i-name > div > :nth-child(2) {
+  transform: scale(0.12);
+  position: absolute;
+  top: -11.1rem;
+  left: -2.8rem;
 }
 
 .i-name > :nth-child(2) {
@@ -59,7 +71,7 @@
   flex: 1;
   position: relative;
   margin-left: 12%;
-  margin-top: 2%;
+  margin-top: 2.5%;
 }
 
 .i-right > * {
@@ -80,8 +92,16 @@
 }
 
 .i-right > :nth-child(3) {
-  transform: scale(1.7);
-  left: 28%;
+  transform: scale(0.29);
+  left: -60%;
+  top: -146%;
+}
+
+.i-right > :nth-child(4) {
+  transform: scale(0.55) rotate(17deg);
+  left: -4rem;
+  top: 8rem;
+  /* transform: rotate(15deg); */
 }
 
 .blur {

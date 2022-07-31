@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+@import url("https://db.onlinewebfonts.com/c/bc7180991c16435d1a43191ad84a21cf?family=MustangW01-Regular");
+
 .n-wrapper {
   height: 10vh;
   display: flex;
@@ -12,8 +16,10 @@
 }
 
 .n-name {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  /* font-weight: bold; */
+  font-weight: 500;
+  font-family: "MustangW01-Regular";
 }
 
 .n-right {

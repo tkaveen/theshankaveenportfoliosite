@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
 import { themeContext } from "../../Context";
 import "./Intro.css";
-// import Github from "../../img/github.png";
-// import LinkedIn from "../../img/linkedin.png";
-// import Twit from "../../img/Twit.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
+import Vector3 from "../../img/Vector3.png";
 import Boy from "../../img/boy.png";
+import KaveenPic from "../../img/KaveenPic.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import Web from "../../img/Web.png";
 import Mob from "../../img/Mob.png";
 import uiux from "../../img/uiux.png";
+import earth from "../../img/earth.png";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
@@ -23,8 +23,11 @@ const Intro = () => {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
-          <span>Theshan Kaveen</span>
+          <div>
+            <span style={{ color: darkMode ? "white" : "" }}>Hello!</span>
+            <img src={earth} alt="" />
+          </div>
+          <span>I'm Theshan Kaveen</span>
           <span>
             A hardworking and an ambitious undergraduate in Management and
             Information Technology, with a high commitment towards making new
@@ -51,11 +54,12 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={Boy} alt="" />
+        <img src={KaveenPic} alt="" />
+        <img src={Vector3} alt="" />
         <div style={{ top: "-4%", left: "68%" }}>
           <FloatingDiv image={Web} txt1="Web" txt2="Developer" />
         </div>
-        <div style={{ top: "18rem", left: "0rem" }}>
+        <div style={{ top: "18rem", left: "9.9rem" }}>
           <FloatingDiv image={Mob} txt1="Mobile" txt2="Developer" />
         </div>
         <div style={{ left: "-4rem" }}>

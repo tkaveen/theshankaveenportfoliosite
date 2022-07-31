@@ -6,7 +6,9 @@ function Navbar() {
   return (
     <div className="n-wrapper">
       <div className="n-left">
-        <div className="n-name">Theshan Kaveen</div>
+        <div className="n-name" style={{ FontFace: "Mustang" }}>
+          Theshan Kaveen.
+        </div>
         <Toggle />
       </div>
       <div className="n-right">
