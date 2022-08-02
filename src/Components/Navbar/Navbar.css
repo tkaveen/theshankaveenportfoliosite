@@ -49,3 +49,23 @@
 .n-button {
   flex: 1.2;
 }
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+
+  .n-button {
+    display: none;
+  }
+
+  .n-left {
+    gap: 3rem;
+  }
+
+  .n-name {
+    white-space: nowrap;
+    font-size: 1.8rem;
+    /* width: 100%; */
+  }
+}
